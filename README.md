@@ -301,7 +301,7 @@
 **Create Customer**
 ----
 
-* **dms/{company_id}/customer**
+* **dms/{company}/customer**
 
 * **Method:**
 
@@ -311,7 +311,7 @@
 
    **Required:**
 
-   `company_id=[string]`
+   `company=[string]`
 
    **Optional:**
 
@@ -339,3 +339,46 @@
     **Content:** `{type: "customer", data: [], success : False}`
 
 * **Notes:**
+
+**Search Customer**
+----
+
+* **dms/{company}/customer/search**
+
+* **Method:**
+
+  `POST`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: customer, 
+                   data: [{
+                    "first_name": "john",
+                    "last_name": "smith",
+                    "mobile_phone": "(123)-456-7890",
+                    "id": "10871"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "customer", data: [], success : False}`
+
+* **Notes:**
+
