@@ -382,3 +382,295 @@
 
 * **Notes:**
 
+**Get Customer**
+----
+
+* **dms/{company}/customer/{customer}**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: customer, 
+                   data: [{
+                    "first_name": "john",
+                    "last_name": "smith",
+                    "mobile_phone": "(123)-456-7890",
+                    "id": "10871"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "customer", data: [], success : False}`
+
+* **Notes:**
+
+**Update Customer**
+----
+
+* **dms/{company}/customer/{customer}**
+
+* **Method:**
+
+  `POST`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: customer, 
+                   data: [{
+                    "first_name": "john",
+                    "last_name": "smith",
+                    "mobile_phone": "(123)-456-7890",
+                    "id": "10871"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "customer", data: [], success : False}`
+
+* **Notes:**
+
+**Delete Customer**
+----
+
+* **dms/{company}/customer/{customer}**
+
+* **Method:**
+
+  `DELETE`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: customer, 
+                   data: [], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "customer", data: [], success : False}`
+
+* **Notes:**
+
+**Search Customer Vehicle**
+----
+
+* **dms/{company}/customer/{customer}/vehicle/search**
+
+* **Method:**
+
+  `POST`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: vehicle, 
+                   data: [ {
+                    "trim": "None",
+                    "mileage": "225600",
+                    "make": "Jeep",
+                    "vin": "1J4FJ68S3WL250852",
+                    "year": "1998",
+                    "model": "cherokee",
+                    "id": "5"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+
+**Get Customer Vehicle**
+----
+
+* **dms/{company}/customer/{customer}/vehicle/{vehicle}**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string], vehicle=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: vehicle, 
+                   data: [ {
+                    "trim": "None",
+                    "mileage": "225600",
+                    "make": "Jeep",
+                    "vin": "1J4FJ68S3WL250852",
+                    "year": "1998",
+                    "model": "cherokee",
+                    "id": "5"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+
+**Update Customer**
+----
+
+* **dms/{company}/customer/{customer}/vehicle/{vehicle}**
+
+* **Method:**
+
+  `POST`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string], vehicle=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: vehicle, 
+                   data: [ {
+                    "trim": "None",
+                    "mileage": "225600",
+                    "make": "Jeep",
+                    "vin": "1J4FJ68S3WL250852",
+                    "year": "1998",
+                    "model": "cherokee",
+                    "id": "5"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+
+**Delete Customer Vehicle**
+----
+
+* **dms/{company}/customer/{customer}/vehicle/{vehicle}**
+
+* **Method:**
+
+  `DELETE`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string], vehicle=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: vehicle, 
+                   data: [], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
