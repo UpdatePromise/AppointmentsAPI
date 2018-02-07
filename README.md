@@ -198,3 +198,102 @@
 * **Notes:**
 
   <__>
+  
+  **Get Motors Vehicle Image**
+----
+
+* **motors/image/year/{year}/make/{make}/model/{model}**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `year=[string], make=[string], model=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{type: image_url, data: image_url, success : True}`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "image_url", data: [], success : False}`
+
+* **Notes:**
+
+ **Get Motors Recommended Services**
+----
+
+* **motors/recommended_services/year/{year}/make/{make}/model/{model}**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `year=[string], make=[string], model=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{type: recommended_services, data: [{id : 12, value : Fix Air Filter}, ...], success : True}`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "recommended_services", data: [], success : False}`
+
+* **Notes:**
+
+ **Get Motors Recommended Services**
+----
+
+* **motors/recommended_services/year/{year}/make/{make}/model/{model}**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `year=[string], make=[string], model=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{type: recommended_services, data: [{id : 12, value : Fix Air Filter}, ...], success : True}`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "recommended_services", data: [], success : False}`
+
+* **Notes:**
