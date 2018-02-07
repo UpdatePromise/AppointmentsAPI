@@ -126,10 +126,8 @@
     **Content:** `{type: "makes", data: [], success : False}`
 
 * **Notes:**
-
-  <__>
   
-    **Get Motors Models**
+**Get Motors Models**
 ----
 
 * **motors/models/year/{year}/make/{make}**
