@@ -786,3 +786,235 @@
 
 * **Notes:**
 
+**Search Schedule**
+----
+
+* **user/{user]/schedule/{type}/search**
+
+* **Method:**
+
+  `POST`
+
+*  **URL Params**
+
+   **Required:**
+
+   `user=[string], type=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: schedule, 
+                   data: [ {
+                    "login_id": "66",
+                    "start_time": "9:00:00",
+                    "end_date": "2018-11-20",
+                    "recurrence_id": "None",
+                    "schedule_name": "None",
+                    "start_date": "2018-11-20",
+                    "end_time": "17:00:00",
+                    "type": "block",
+                    "id": "3",
+                    "promise_id": "None"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+ If Type is set to appointment the record(s) are returned with the associated appointment information. 
+   **Content:** `{
+                   type: schedule, 
+                   data: [ "schedule": {
+                    "login_id": "66",
+                    "start_time": "09:00:00",
+                    "end_date": "2018-11-20",
+                    "recurrence_id": "None",
+                    "schedule_name": "None",
+                    "start_date": "2018-11-20",
+                    "end_time": "17:00:00",
+                    "type": "block",
+                    "id": "3",
+                    "promise_id": ""
+                   }, 
+                   "appointment": {
+                      "id": 15457638,
+                      "created_by_login_id": 66,
+                      "appointment_at": "2018-11-20 09:00:00",
+                      "customer_id": 1,
+                      "vehicle_id": 3,
+                      "company_id": 33558
+                    },
+                   ], 
+                   success : True
+                  }`
+
+**Get Schedule**
+----
+
+* **user/{user]/schedule/{type}/id/{id}**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `user=[string], type=[string], id=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: schedule, 
+                   data: [ {
+                    "login_id": "66",
+                    "start_time": "09:00:00",
+                    "end_date": "2018-11-20",
+                    "recurrence_id": "None",
+                    "schedule_name": "None",
+                    "start_date": "2018-11-20",
+                    "end_time": "17:00:00",
+                    "type": "block",
+                    "id": "3",
+                    "promise_id": "None"
+                   }], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+
+  If Type is set to appointment the record(s) are returned with the associated appointment information. 
+   **Content:** `{
+                   type: schedule, 
+                   data: [ "schedule": {
+                    "login_id": "66",
+                    "start_time": "09:00:00",
+                    "end_date": "2018-11-20",
+                    "recurrence_id": "None",
+                    "schedule_name": "None",
+                    "start_date": "2018-11-20",
+                    "end_time": "17:00:00",
+                    "type": "block",
+                    "id": "3",
+                    "promise_id": ""
+                   }, 
+                   "appointment": {
+                      "id": 15457638,
+                      "created_by_login_id": 66,
+                      "appointment_at": "2018-11-20 09:00:00",
+                      "customer_id": 1,
+                      "vehicle_id": 3,
+                      "company_id": 33558
+                    },
+                   ], 
+                   success : True
+                  }`
+
+**Update Customer**
+----
+
+* **dms/{company}/customer/{customer}/vehicle/{vehicle}**
+
+* **Method:**
+
+  `POST`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string], vehicle=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: vehicle, 
+                   data: [ {
+                    "trim": "None",
+                    "mileage": "225600",
+                    "make": "Jeep",
+                    "vin": "1J4FJ68S3WL250852",
+                    "year": "1998",
+                    "model": "cherokee",
+                    "id": "5"
+                   }, ...], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+
+**Delete Customer Vehicle**
+----
+
+* **dms/{company}/customer/{customer}/vehicle/{vehicle}**
+
+* **Method:**
+
+  `DELETE`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string], vehicle=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: vehicle, 
+                   data: [], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+
+
