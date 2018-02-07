@@ -92,7 +92,7 @@
 
 * **Notes:**
   
-  **Get Motors Makes**
+**Get Motors Makes**
 ----
 
 * **motors/makes/year/{year}**
