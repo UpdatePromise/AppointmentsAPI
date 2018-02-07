@@ -57,11 +57,8 @@
 
 **Get Motors Years**
 ----
-  <_Get Motors Years_>
 
-* **URL**
-
-  <_motors/years_>
+* **motors/years**
 
 * **Method:**
 
