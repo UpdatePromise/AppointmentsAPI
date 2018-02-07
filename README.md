@@ -199,7 +199,7 @@
 
   <__>
   
-  **Get Motors Vehicle Image**
+**Get Motors Vehicle Image**
 ----
 
 * **motors/image/year/{year}/make/{make}/model/{model}**
@@ -232,7 +232,7 @@
 
 * **Notes:**
 
- **Get Motors Recommended Services**
+**Get Motors Recommended Services**
 ----
 
 * **motors/recommended_services/year/{year}/make/{make}/model/{model}**
@@ -265,7 +265,7 @@
 
 * **Notes:**
 
- **Get Motors Recommended Services**
+**Get Motors Recommended Services**
 ----
 
 * **motors/recommended_services/year/{year}/make/{make}/model/{model}**
@@ -295,5 +295,47 @@
 
   * **Code:** 401 UNAUTHORIZED <br />
     **Content:** `{type: "recommended_services", data: [], success : False}`
+
+* **Notes:**
+
+**Create Customer**
+----
+
+* **dms/{company_id}/customer**
+
+* **Method:**
+
+  `POST`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company_id=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: customer, 
+                   data: [{
+                    "first_name": "john",
+                    "last_name": "smith",
+                    "mobile_phone": "(123)-456-7890",
+                    "id": "10871"
+                   }], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "customer", data: [], success : False}`
 
 * **Notes:**
