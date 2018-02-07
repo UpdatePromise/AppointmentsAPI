@@ -593,7 +593,7 @@
 
 * **Notes:**
 
-**Update Customer**
+**Update Customer Vehicle**
 ----
 
 * **dms/{company}/customer/{customer}/vehicle/{vehicle}**
@@ -738,7 +738,7 @@
   * **Code:** 200 <br />
     **Content:** `{
                    type: services, 
-                   data: [{id : 13RP59X, name : Air Filter Change}], 
+                   data: [{id : 13RP59X, name : Air Filter Change}, ...], 
                    success : True
                   }`
 
@@ -775,7 +775,7 @@
   * **Code:** 200 <br />
     **Content:** `{
                    type: employee, 
-                   data: [{id : 12, name : John Snow}], 
+                   data: [{id : 12, name : John Snow}, ...], 
                    success : True
                   }`
 
@@ -836,7 +836,7 @@
  If Type is set to appointment the record(s) are returned with the associated appointment information. 
    **Content:** `{
                    type: schedule, 
-                   data: [ "schedule": {
+                   data: [ {"schedule": {
                     "login_id": "66",
                     "start_time": "09:00:00",
                     "end_date": "2018-11-20",
@@ -846,7 +846,7 @@
                     "end_time": "17:00:00",
                     "type": "block",
                     "id": "3",
-                    "promise_id": ""
+                    "promise_id": "12345"
                    }, 
                    "appointment": {
                       "id": 15457638,
@@ -855,7 +855,7 @@
                       "customer_id": 1,
                       "vehicle_id": 3,
                       "company_id": 33558
-                    },
+                    }} ...,
                    ], 
                    success : True
                   }`
@@ -931,7 +931,7 @@
                       "customer_id": 1,
                       "vehicle_id": 3,
                       "company_id": 33558
-                    },
+                    }
                    ], 
                    success : True
                   }`
@@ -961,16 +961,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: vehicle, 
-                   data: [ {
-                    "trim": "None",
-                    "mileage": "225600",
-                    "make": "Jeep",
-                    "vin": "1J4FJ68S3WL250852",
-                    "year": "1998",
-                    "model": "cherokee",
-                    "id": "5"
-                   }, ...], 
+                   type: schedule, 
+                   data: [], 
                    success : True
                   }`
 
@@ -983,27 +975,7 @@
 
 **Content:** `{
                    type: schedule, 
-                   data: [ "schedule": {
-                    "login_id": "66",
-                    "start_time": "09:00:00",
-                    "end_date": "2018-11-20",
-                    "recurrence_id": "None",
-                    "schedule_name": "None",
-                    "start_date": "2018-11-20",
-                    "end_time": "17:00:00",
-                    "type": "block",
-                    "id": "3",
-                    "promise_id": ""
-                   }, 
-                   "appointment": {
-                      "id": 15457638,
-                      "created_by_login_id": 66,
-                      "appointment_at": "2018-11-20 09:00:00",
-                      "customer_id": 1,
-                      "vehicle_id": 3,
-                      "company_id": 33558
-                    },
-                   ], 
+                   data: [], 
                    success : True
                   }`
 
