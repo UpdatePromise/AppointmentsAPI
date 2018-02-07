@@ -98,3 +98,135 @@
 * **Notes:**
 
   <__>
+  
+  **Title**
+----
+  <_Get Motors Makes_>
+
+* **URL**
+
+  <_motors/makes/year/{year}_>
+
+* **Method:**
+
+  <_The request type_>
+
+  `GET`
+
+*  **URL Params**
+
+   <__>
+
+   **Required:**
+
+   ``
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+  <__>
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{type: makes, data: [{ id : 12, value : Acura }, ...], success : True}`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "makes", data: [], success : False}`
+
+* **Notes:**
+
+  <__>
+  
+    **Title**
+----
+  <_Get Motors Models_>
+
+* **URL**
+
+  <_motors/models/year/{year}/make/{make}_>
+
+* **Method:**
+
+  <_The request type_>
+
+  `GET`
+
+*  **URL Params**
+
+   <__>
+
+   **Required:**
+
+   ``
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+  <__>
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{type: models, data: [{ id : 12, value : RSX }, ...], success : True}`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "models", data: [], success : False}`
+
+* **Notes:**
+
+  <__>
+  
+      **Get Motors Trims**
+----
+  <_Get Motors Trims_>
+
+* **motors/trims/year/{year}/make/{make}/model/{model}**
+
+  <__>
+
+* **Method:**
+
+  <_The request type_>
+
+  `GET`
+
+*  **URL Params**
+
+   <__>
+
+   **Required:**
+
+   ``
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+  <__>
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{type: trims, data: [{ id : 12, value : LX }, ...], success : True}`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "trims", data: [], success : False}`
+
+* **Notes:**
+
+  <__>
