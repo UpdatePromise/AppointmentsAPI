@@ -909,7 +909,8 @@
 * **Notes:**
 
   If Type is set to appointment the record(s) are returned with the associated appointment information. 
-   **Content:** `{
+  
+  **Content:** `{
                    type: schedule, 
                    data: [ "schedule": {
                     "login_id": "66",
@@ -935,10 +936,10 @@
                    success : True
                   }`
 
-**Update Customer**
+**Update Schedule**
 ----
 
-* **dms/{company}/customer/{customer}/vehicle/{vehicle}**
+* **user/{user]/schedule/{type}/id/{id}**
 
 * **Method:**
 
@@ -948,7 +949,7 @@
 
    **Required:**
 
-   `company=[string], customer=[string], vehicle=[string]`
+   `user=[string], type=[string], id=[string]`
 
    **Optional:**
 
@@ -980,10 +981,36 @@
 
 * **Notes:**
 
+**Content:** `{
+                   type: schedule, 
+                   data: [ "schedule": {
+                    "login_id": "66",
+                    "start_time": "09:00:00",
+                    "end_date": "2018-11-20",
+                    "recurrence_id": "None",
+                    "schedule_name": "None",
+                    "start_date": "2018-11-20",
+                    "end_time": "17:00:00",
+                    "type": "block",
+                    "id": "3",
+                    "promise_id": ""
+                   }, 
+                   "appointment": {
+                      "id": 15457638,
+                      "created_by_login_id": 66,
+                      "appointment_at": "2018-11-20 09:00:00",
+                      "customer_id": 1,
+                      "vehicle_id": 3,
+                      "company_id": 33558
+                    },
+                   ], 
+                   success : True
+                  }`
+
 **Delete Customer Vehicle**
 ----
 
-* **dms/{company}/customer/{customer}/vehicle/{vehicle}**
+* **user/{user]/schedule/{type}/id/{id}**
 
 * **Method:**
 
@@ -993,7 +1020,7 @@
 
    **Required:**
 
-   `company=[string], customer=[string], vehicle=[string]`
+   `user=[string], type=[string], id=[string]`
 
    **Optional:**
 
