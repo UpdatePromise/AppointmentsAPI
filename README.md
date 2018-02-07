@@ -164,7 +164,7 @@
 
   <__>
   
-**Get Motors Makes**
+**Get Motors Trims**
 ----
 
 * **motors/trims/year/{year}/make/{make}/model/{model}**
