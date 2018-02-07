@@ -674,3 +674,115 @@
     **Content:** `{type: "vehicle", data: [], success : False}`
 
 * **Notes:**
+
+**Deferred Job Codes For Customer Vehicle**
+----
+
+* **dms/{company}/customer/{customer}/vehicle/{vehicle}/deferred**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string], customer=[string], vehicle=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: vehicle, 
+                   data: [{id : 13RP59X, name : Air Filter Change}], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "vehicle", data: [], success : False}`
+
+* **Notes:**
+
+**Get Services**
+----
+
+* **dms/{company}/services**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: services, 
+                   data: [{id : 13RP59X, name : Air Filter Change}], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "services", data: [], success : False}`
+
+* **Notes:**
+
+**Get Employees**
+----
+
+* **dms/{company}/employees**
+
+* **Method:**
+
+  `GET`
+
+*  **URL Params**
+
+   **Required:**
+
+   `company=[string]`
+
+   **Optional:**
+
+   ``
+
+* **Data Params**
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+                   type: employee, 
+                   data: [{id : 12, name : John Snow}], 
+                   success : True
+                  }`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{type: "employee", data: [], success : False}`
+
+* **Notes:**
+
