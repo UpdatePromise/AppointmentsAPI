@@ -62,13 +62,12 @@
 
 * **Method:**
 
-  <_The request type_>
-
   `GET`
 
 *  **URL Params**
 
-   <__>
+
+   **Required:**
 
    **Required:**
 
@@ -80,7 +79,6 @@
 
 * **Data Params**
 
-  <__>
 
 * **Success Response:**
 
@@ -93,30 +91,21 @@
     **Content:** `{type: "years", data: [], success : False}`
 
 * **Notes:**
-
-  <__>
   
-  **Title**
+  **Get Motors Makes**
 ----
-  <_Get Motors Makes_>
 
-* **URL**
-
-  <_motors/makes/year/{year}_>
+* **motors/makes/year/{year}**
 
 * **Method:**
-
-  <_The request type_>
 
   `GET`
 
 *  **URL Params**
 
-   <__>
-
    **Required:**
 
-   ``
+   `year=[string]`
 
    **Optional:**
 
@@ -140,27 +129,21 @@
 
   <__>
   
-    **Title**
+    **Get Motors Models**
 ----
-  <_Get Motors Models_>
 
-* **URL**
+* **motors/models/year/{year}/make/{make}**
 
-  <_motors/models/year/{year}/make/{make}_>
 
 * **Method:**
-
-  <_The request type_>
 
   `GET`
 
 *  **URL Params**
 
-   <__>
-
    **Required:**
 
-   ``
+   `year=[string], make=[string]`
 
    **Optional:**
 
@@ -168,7 +151,6 @@
 
 * **Data Params**
 
-  <__>
 
 * **Success Response:**
 
@@ -184,35 +166,26 @@
 
   <__>
   
-      **Get Motors Trims**
+**Get Motors Makes**
 ----
-  <_Get Motors Trims_>
 
 * **motors/trims/year/{year}/make/{make}/model/{model}**
 
-  <__>
-
 * **Method:**
-
-  <_The request type_>
 
   `GET`
 
 *  **URL Params**
 
-   <__>
-
    **Required:**
 
-   ``
+   `year=[string], make=[string], model=[string]`
 
    **Optional:**
 
    ``
 
 * **Data Params**
-
-  <__>
 
 * **Success Response:**
 
