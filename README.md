@@ -319,6 +319,13 @@
 
 * **Data Params**
 
+{
+   "first_name": "john",
+   "last_name": "smith",
+   "mobile_phone": "(123)-456-7890",
+   "id": "10871"
+}
+
 * **Success Response:**
 
   * **Code:** 200 <br />
@@ -360,6 +367,13 @@
    ``
 
 * **Data Params**
+
+{
+   "first_name": "john",
+   "last_name": "smith",
+   "mobile_phone": "(123)-456-7890",
+   "id": "10871"
+}
 
 * **Success Response:**
 
@@ -444,6 +458,13 @@
    ``
 
 * **Data Params**
+
+{
+   "first_name": "john",
+   "last_name": "smith",
+   "mobile_phone": "(123)-456-7890",
+   "id": "10871"
+}
 
 * **Success Response:**
 
@@ -613,6 +634,16 @@
    ``
 
 * **Data Params**
+
+{
+   "trim": "None",
+   "mileage": "225600",
+   "make": "Jeep",
+   "vin": "1J4FJ68S3WL250852",
+   "year": "1998",
+   "model": "cherokee",
+   "id": "5"
+}
 
 * **Success Response:**
 
@@ -854,7 +885,10 @@
                       "appointment_at": "2018-11-20 09:00:00",
                       "customer_id": 1,
                       "vehicle_id": 3,
-                      "company_id": 33558
+                      "company_id": 33558,
+                      "concerns" : "My concerns are",
+                      "notes": "Hello",
+                      "services" : Air Filter
                     }} ...,
                    ], 
                    success : True
@@ -924,13 +958,16 @@
                     "id": "3",
                     "promise_id": ""
                    }, 
-                   "appointment": {
+                   "appointment : "{
                       "id": 15457638,
                       "created_by_login_id": 66,
                       "appointment_at": "2018-11-20 09:00:00",
                       "customer_id": 1,
                       "vehicle_id": 3,
-                      "company_id": 33558
+                      "company_id": 33558,
+                      "concerns" : "My concerns are",
+                      "notes": "Hello",
+                      "services" : Air Filter
                     }
                    ], 
                    success : True
