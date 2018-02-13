@@ -91,7 +91,7 @@
     **Content:** `{type: "years", data: [], success : False}`
 
 * **Notes:**
-  
+
 **Get Motors Makes**
 ----
 
@@ -126,7 +126,7 @@
     **Content:** `{type: "makes", data: [], success : False}`
 
 * **Notes:**
-  
+
 **Get Motors Models**
 ----
 
@@ -163,7 +163,7 @@
 * **Notes:**
 
   <__>
-  
+
 **Get Motors Trims**
 ----
 
@@ -198,7 +198,7 @@
 * **Notes:**
 
   <__>
-  
+
 **Get Motors Vehicle Image**
 ----
 
@@ -330,13 +330,13 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: customer, 
+                   type: customer,
                    data: [{
                     "first_name": "john",
                     "last_name": "smith",
                     "mobile_phone": "(123)-456-7890",
                     "id": "10871"
-                   }], 
+                   }],
                    success : True
                   }`
 
@@ -379,13 +379,13 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: customer, 
+                   type: customer,
                    data: [{
                     "first_name": "john",
                     "last_name": "smith",
                     "mobile_phone": "(123)-456-7890",
                     "id": "10871"
-                   }, ...], 
+                   }, ...],
                    success : True
                   }`
 
@@ -421,13 +421,13 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: customer, 
+                   type: customer,
                    data: [{
                     "first_name": "john",
                     "last_name": "smith",
                     "mobile_phone": "(123)-456-7890",
                     "id": "10871"
-                   }, ...], 
+                   }, ...],
                    success : True
                   }`
 
@@ -470,13 +470,13 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: customer, 
+                   type: customer,
                    data: [{
                     "first_name": "john",
                     "last_name": "smith",
                     "mobile_phone": "(123)-456-7890",
                     "id": "10871"
-                   }, ...], 
+                   }, ...],
                    success : True
                   }`
 
@@ -512,8 +512,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: customer, 
-                   data: [], 
+                   type: customer,
+                   data: [],
                    success : True
                   }`
 
@@ -549,7 +549,7 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: vehicle, 
+                   type: vehicle,
                    data: [ {
                     "trim": "None",
                     "mileage": "225600",
@@ -558,7 +558,7 @@
                     "year": "1998",
                     "model": "cherokee",
                     "id": "5"
-                   }, ...], 
+                   }, ...],
                    success : True
                   }`
 
@@ -594,7 +594,7 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: vehicle, 
+                   type: vehicle,
                    data: [ {
                     "trim": "None",
                     "mileage": "225600",
@@ -603,7 +603,7 @@
                     "year": "1998",
                     "model": "cherokee",
                     "id": "5"
-                   }, ...], 
+                   }, ...],
                    success : True
                   }`
 
@@ -649,7 +649,7 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: vehicle, 
+                   type: vehicle,
                    data: [ {
                     "trim": "None",
                     "mileage": "225600",
@@ -658,7 +658,7 @@
                     "year": "1998",
                     "model": "cherokee",
                     "id": "5"
-                   }, ...], 
+                   }, ...],
                    success : True
                   }`
 
@@ -694,8 +694,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: vehicle, 
-                   data: [], 
+                   type: vehicle,
+                   data: [],
                    success : True
                   }`
 
@@ -731,8 +731,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: vehicle, 
-                   data: [{id : 13RP59X, name : Air Filter Change}], 
+                   type: vehicle,
+                   data: [{id : 13RP59X, name : Air Filter Change}],
                    success : True
                   }`
 
@@ -768,8 +768,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: services, 
-                   data: [{id : 13RP59X, name : Air Filter Change}, ...], 
+                   type: services,
+                   data: [{id : 13RP59X, name : Air Filter Change}, ...],
                    success : True
                   }`
 
@@ -805,8 +805,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: employee, 
-                   data: [{id : 12, name : John Snow}, ...], 
+                   type: employee,
+                   data: [{id : 12, first_name : John, last_name : Snow}, ...],
                    success : True
                   }`
 
@@ -842,9 +842,9 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: schedule, 
+                   type: schedule,
                    data: [ {
-                    "login_id": "66",
+                    "assigned_user_id": "66",
                     "start_time": "9:00:00",
                     "end_date": "2018-11-20",
                     "recurrence_id": "None",
@@ -854,7 +854,7 @@
                     "type": "block",
                     "id": "3",
                     "promise_id": "None"
-                   }, ...], 
+                   }, ...],
                    success : True
                   }`
 
@@ -864,11 +864,11 @@
     **Content:** `{type: "vehicle", data: [], success : False}`
 
 * **Notes:**
- If Type is set to appointment the record(s) are returned with the associated appointment information. 
+ If Type is set to appointment the record(s) are returned with the associated appointment information.
    **Content:** `{
-                   type: schedule, 
+                   type: schedule,
                    data: [ {"schedule": {
-                    "login_id": "66",
+                    "assigned_user_id": "66",
                     "start_time": "09:00:00",
                     "end_date": "2018-11-20",
                     "recurrence_id": "None",
@@ -877,20 +877,22 @@
                     "end_time": "17:00:00",
                     "type": "block",
                     "id": "3",
-                    "promise_id": "12345"
-                   }, 
+                    "promise_id": "15457638"
+                   },
                    "appointment": {
                       "id": 15457638,
-                      "created_by_login_id": 66,
+                      "assigned_user_id": 66,
                       "appointment_at": "2018-11-20 09:00:00",
                       "customer_id": 1,
                       "vehicle_id": 3,
                       "company_id": 33558,
                       "concerns" : "My concerns are",
                       "notes": "Hello",
-                      "services" : Air Filter
+                      "services" : "Air Filter"
+                      "status" : "Check In"
+                      "qr_code" : "8377ffnvfasfd"
                     }} ...,
-                   ], 
+                   ],
                    success : True
                   }`
 
@@ -919,9 +921,9 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: schedule, 
+                   type: schedule,
                    data: [ {
-                    "login_id": "66",
+                    "assigned_user_id": "66",
                     "start_time": "09:00:00",
                     "end_date": "2018-11-20",
                     "recurrence_id": "None",
@@ -931,7 +933,7 @@
                     "type": "block",
                     "id": "3",
                     "promise_id": "None"
-                   }], 
+                   }],
                    success : True
                   }`
 
@@ -942,12 +944,12 @@
 
 * **Notes:**
 
-  If Type is set to appointment the record(s) are returned with the associated appointment information. 
-  
+  If Type is set to appointment the record(s) are returned with the associated appointment information.
+
   **Content:** `{
-                   type: schedule, 
+                   type: schedule,
                    data: [ "schedule": {
-                    "login_id": "66",
+                    "assigned_user_id": "66",
                     "start_time": "09:00:00",
                     "end_date": "2018-11-20",
                     "recurrence_id": "None",
@@ -956,20 +958,22 @@
                     "end_time": "17:00:00",
                     "type": "block",
                     "id": "3",
-                    "promise_id": ""
-                   }, 
+                    "promise_id": "15457638"
+                   },
                    "appointment : "{
-                      "id": 15457638,
-                      "created_by_login_id": 66,
-                      "appointment_at": "2018-11-20 09:00:00",
-                      "customer_id": 1,
-                      "vehicle_id": 3,
-                      "company_id": 33558,
-                      "concerns" : "My concerns are",
-                      "notes": "Hello",
-                      "services" : Air Filter
+                     "id": 15457638,
+                     "assigned_user_id": 66,
+                     "appointment_at": "2018-11-20 09:00:00",
+                     "customer_id": 1,
+                     "vehicle_id": 3,
+                     "company_id": 33558,
+                     "concerns" : "My concerns are",
+                     "notes": "Hello",
+                     "services" : "Air Filter"
+                     "status" : "Check In"
+                     "qr_code" : "8377ffnvfasfd"
                     }
-                   ], 
+                   ],
                    success : True
                   }`
 
@@ -998,8 +1002,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: schedule, 
-                   data: [], 
+                   type: schedule,
+                   data: [],
                    success : True
                   }`
 
@@ -1011,8 +1015,8 @@
 * **Notes:**
 
 **Content:** `{
-                   type: schedule, 
-                   data: [], 
+                   type: schedule,
+                   data: [],
                    success : True
                   }`
 
@@ -1041,8 +1045,8 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-                   type: vehicle, 
-                   data: [], 
+                   type: vehicle,
+                   data: [],
                    success : True
                   }`
 
@@ -1052,5 +1056,3 @@
     **Content:** `{type: "vehicle", data: [], success : False}`
 
 * **Notes:**
-
-
