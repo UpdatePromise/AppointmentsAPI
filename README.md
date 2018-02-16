@@ -866,6 +866,8 @@
     **Content:** `{type: "vehicle", data: [], success : False}`
 
 * **Notes:**
+
+ If start_time and end_time are included then start_date MUST be equivalent to end_date.
  If Type is set to appointment the record(s) are returned with the associated appointment information.
    **Content:** `{
                    type: schedule,
