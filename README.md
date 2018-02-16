@@ -838,6 +838,8 @@
 
 * **Data Params**
 
+{"start_date" : "2018-11-20", "end_date" : "2018-11-20", "start_time" : "9:00:00", "end_time" : "17:00:00"}
+
 * **Success Response:**
 
   * **Code:** 200 <br />
